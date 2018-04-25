@@ -16,6 +16,10 @@ public class Answer {
 
     private List<String> numList;
 
+    public List<String> getNumList() {
+        return numList;
+    }
+
     public void setNumList(List<String> numList) {
         this.numList = numList;
     }
