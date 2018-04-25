@@ -57,6 +57,7 @@ public class Game {
     }
 
     private boolean checkCorrectGuessResult() {
-        return guessResults.stream().anyMatch(result -> result.getResult().contentEquals(CORRECT_RESULT_STANDAR));
+        return guessResults.stream()
+                .anyMatch(result -> result.getResult().contentEquals(CORRECT_RESULT_STANDAR));
     }
 }

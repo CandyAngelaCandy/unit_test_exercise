@@ -17,7 +17,7 @@ public class InputValidatorTest {
         assertThat(inputValidator.validate("3 4 5 6")).isEqualTo(true);
         assertThat(inputValidator.validate("3 4 5 6 7")).isEqualTo(false);
         assertThat(inputValidator.validate("3 4 5 10")).isEqualTo(false);
-        
+
         assertThat(inputValidator.validate("3 4 5 3")).isEqualTo(false);
     }
 
