@@ -51,7 +51,7 @@ public class GameTest {
   @Test
   public void should_return_status() {
     Answer inputAnswer1 = new Answer();
-    List<String> inputAnswerList1 = Arrays.asList("1","5","6","7");
+    List<String> inputAnswerList1 = Arrays.asList("1","0","8","2");
     inputAnswer1.setNumList(inputAnswerList1);
 
     Answer inputAnswer2 = new Answer();
