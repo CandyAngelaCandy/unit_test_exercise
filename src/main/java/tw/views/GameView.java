@@ -35,7 +35,7 @@ public class GameView {
         });
     }
 
-    public void showBegin() throws IOException {
+    public void showBegin()  {
         System.out.println("------Guess Number Game, You have 6 chances to guess!  ------");
 
     }
