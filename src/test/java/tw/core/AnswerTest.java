@@ -39,16 +39,14 @@ public class AnswerTest {
 
   @Test
   public void should_return_Record() {
-        Answer inputAnswer = new Answer();
-        List<String> inputAnswerList = Arrays.asList("1","5","6","7");
-        inputAnswer.setNumList(inputAnswerList);
 
         Answer answer = new Answer();
         List<String> correctAnswer = Arrays.asList("1","2","3","4");
         answer.setNumList(correctAnswer);
 
-        int numOfA = answer.check(inputAnswer).getValue()[0];
-        int numOfB = answer.check(inputAnswer).getValue()[1];
+        int[] value = answer.check(Answer.createAnswer("1 5 6 7")).getValue();
+        int numOfA = value[0];
+        int numOfB = value[1];
 
         assertThat(numOfA).isEqualTo(1);
         assertThat(numOfB).isEqualTo(0);
